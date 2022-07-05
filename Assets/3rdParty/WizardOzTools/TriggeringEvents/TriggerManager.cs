@@ -11,7 +11,7 @@ namespace WizardOzTools
         {
             foreach (TriggerEventItem te in events)
             {
-                if (te.TriggerType == TriggerEventItem.ColliderType.Trigger_PassThrough
+                if (te.TriggerType == TriggerEventItem.ColliderType.Trigger_PassThrough 
                     && other.CompareTag(te.TargetObjectTagName))
                 {
                     te.Activate.Invoke();
@@ -23,7 +23,7 @@ namespace WizardOzTools
         {
             foreach (TriggerEventItem te in events)
             {
-                if (te.TriggerType == TriggerEventItem.ColliderType.Collider_PhysicalWall
+                if (te.TriggerType == TriggerEventItem.ColliderType.Collider_PhysicalWall 
                     && collision.gameObject.CompareTag(te.TargetObjectTagName))
                 {
                     te.Activate.Invoke();
